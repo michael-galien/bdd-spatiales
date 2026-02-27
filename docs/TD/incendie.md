@@ -15,7 +15,6 @@ correction dispo dans le schéma
 
 ## Question 1
 
---
 La [Cellule de Reconnaissance et d’Investigation Drone](https://www.sdis34.fr/la-cellule-de-reconnaissance-et-dinvestigation-drone/) vient de survoler la zone.
 
 Elle indique que le point d'éclosion se situe à 43°48'9.720"N 3°10'23.804"E.
@@ -23,7 +22,8 @@ Le front de feu est quant à lui positionné sur une ligne définie par les 3 po
 * 43°48'31.817"N 3°9'5.191"E
 * 43°48'15.404"N 3°8'51.652"E
 * 43°47'53.682"N 3°9'1.814"E
---
+
+Les questions 1 à 5 vont permettre de créer le polygone du contour du feu.
 
 Créez une table contenant les points fournis par la cellule drone, pour cela :
 * Créez une table `points_incendie_4326` avec une colonne `id` de type `serial` (auto-incrément).

@@ -52,6 +52,8 @@ Créez une table `zone_incendie` contenant une colonne `geom` remplie avec le po
 
 ## Question 6
 
+Le COS vous demande quelle surface a déjà parcourue l'incendie.
+
 Créez une table `nb_ha_incendie` contenant toutes les colonnes de la table  `zone_incendie` plus la surface de la zone exprimée en hectares.
 
 ## Question 7

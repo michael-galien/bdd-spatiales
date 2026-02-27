@@ -40,11 +40,11 @@ Créez une table `points_incendie_2154` ayant la même structure et le même con
 
 ## Question 3
 
-Créez une table `ligne_incendie` contenant dans une colonne `geom` la ligne construite à l'appui des points ordonnée par l'`id` de la table `points_incendie_2154`.
+Créez une table `ligne_incendie` contenant dans une colonne `geom` la ligne construite à l'appui des points de la table `points_incendie_2154` ordonnés par l'`id`.
 
 ## Question 4
 
-Pour pouvoir créer le contour de feu, il faut disposer d'une ligne fermée c'est à dire d'une ligne dont le premier point est égal au dernier point.
+Pour pouvoir créer le contour de feu, il faut disposer d'une ligne fermée c'est-à-dire d'une ligne dont le premier point est égal au dernier point.
 
 Créez une table `contour_incendie` contenant une colonne `geom` remplie avec la ligne de la table `ligne_incendie` à laquelle vous aurez ajouté un point égal au point de départ de la ligne.
 
@@ -56,7 +56,7 @@ Créez une table `zone_incendie` contenant une colonne `geom` remplie avec le po
 
 Le COS vous demande quelle surface a déjà parcourue l'incendie.
 
-Créez une table `nb_ha_incendie` contenant toutes les colonnes de la table  `zone_incendie` plus la surface de la zone exprimée en hectares.
+Créez une table `nb_ha_incendie` contenant toutes les colonnes de la table `zone_incendie` plus la surface de la zone exprimée en hectares.
 
 ## Question 7
 

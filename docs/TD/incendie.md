@@ -67,6 +67,10 @@ Créez une table `commune_incendie` confirmant la commune d'emprise de l'incendi
 
 ## Question 8
 
+Le COS souhaite informer les maires des communes limitrophes des opérations en cours et vous demande la liste des communes concernées.
+
+Créez une table `communes_limitrophes_incendie` qui liste les communes limitrophes à celle de la table `commune_incendie`.
+
 ## Question 9
 
 ## Question 10

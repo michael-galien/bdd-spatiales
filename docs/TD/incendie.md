@@ -60,6 +60,11 @@ Créez une table `nb_ha_incendie` contenant toutes les colonnes de la table `zon
 
 ## Question 7
 
+La zone très boisée rend difficile l'identification des limites communales.
+Le COS vous demande de lui confirmer que seule la commune de Joncels est pour l'heure impactée par l'incendie.
+
+Créez une table `commune_incendie` confirmant la commune d'emprise de l'incendie.
+
 ## Question 8
 
 ## Question 9

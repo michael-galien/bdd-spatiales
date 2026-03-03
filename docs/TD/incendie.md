@@ -1,11 +1,32 @@
 # Scénario
 
 Un incendie est en cours au Nord du département de l'Hérault.
+Des vents importants d'Est en Ouest font que celui-ci progresse rapidement et qu'un important panache de fumée se dégage en direction de zones habitées.
+
 Le Commandant des Opérations de Secours (COS) a besoin d'informations sur la zone pour déployer de façon optimale les moyens sur place.
+Il vous demande de lui fournir plusieurs éléments à l'appui des données géographiques dont vous disposez.
 
-# Instructions et étapes préalables
+# Instructions
 
-4326 / 2154 (en mètres)
+Pour répondre aux questions du COS, vous allez devoir créer plusieurs tables PostgreSQL contenant une colonne géographique PostGIS.
+Dans chacune des tables, la colonne géographique devra être nommée `geom'.
+
+Pour pouvoir rejouer facilement l'intégralité du script SQL que vous allez rédiger durant le TD, chaque création de table devra être précédée d'une ordre SQL de suppression de la forme :
+`drop table if exists <nom_table>;`
+
+Sauf précision, le système de coordonnées utilisé sera le Lambert-93 ([SRID 2154](https://epsg.io/2154)).
+Dans cette projection, les mesures sont exprimées en m et m².
+
+L'autre système utilisé sera le WGS84 ([SRID 4326](https://epsg.io/4326)) bien connu grâce au GPS.
+Les questions qui devront utiliser ce système l'indiqueront explicitement.
+
+A noter que la réponse à certaines questions se base sur le résultat des précédentes.
+Aussi, si vous bloquer sur une question, vous pouvez trouvez le résultat dans le schéma `donnees_resultats`.
+
+Vous l'aurez compris, ce qui est jugé ce ne sont pas les résultats en tant que tels mais bien les requêtes qui ont permis de les obtenir.
+
+# Etapes préalables
+
 Initialisation de la BDD
 Paramètrage de QGIs (tile Google Maps + connexion PG)
 drop if exists / create
@@ -27,7 +48,7 @@ Les questions 1 à 5 vont permettre de créer le polygone du contour du feu.
 
 Créez une table contenant les points fournis par la cellule drone, pour cela :
 * Créez une table `points_incendie_4326` avec une colonne `id` de type `serial` (auto-incrément).
-* Ajoutez à la table une colonne `geom` de type point à 2 dimensions et utilisant le système de coordonnées WGS84 ([EPSG:4326](https://epsg.io/4326)).
+* Ajoutez à la table une colonne `geom` de type point à 2 dimensions et utilisant le système de coordonnées WGS84.
 * Ajoutez à la table les 4 points suivants en respectant l'ordre d'insertion :
     * latitude (X) : 3.173279, longitude (Y) : 43.802700
     * latitude (X) : 3.151442, longitude (Y) : 43.808838
@@ -40,7 +61,7 @@ Créez une table `points_incendie_2154` ayant la même structure et le même con
 
 ## Question 3
 
-Créez une table `ligne_incendie` contenant dans une colonne `geom` la ligne construite à l'appui des points de la table `points_incendie_2154` ordonnés par l'`id`.
+Créez une table `ligne_incendie` contenant la ligne construite à l'appui des points de la table `points_incendie_2154` ordonnés par l'`id`.
 
 ## Question 4
 
@@ -50,11 +71,11 @@ Créez une table `contour_incendie` contenant une colonne `geom` remplie avec la
 
 ## Question 5
 
-Créez une table `zone_incendie` contenant une colonne `geom` remplie avec le polygone construit à l'appui de la ligne de la table `contour_incendie`.
+Créez une table `zone_incendie` contenant le polygone construit à l'appui de la ligne de la table `contour_incendie`.
 
 ## Question 6
 
-Le COS vous demande quelle surface a déjà parcourue l'incendie.
+Le COS souhaite connaître la surface déjà parcourue par l'incendie.
 
 Créez une table `nb_ha_incendie` contenant toutes les colonnes de la table `zone_incendie` plus la surface de la zone exprimée en hectares.
 
@@ -75,9 +96,14 @@ Créez une table `communes_limitrophes_incendie` qui liste les communes limitrop
 
 Pour sécuriser le secteur, le COS vous demande de déterminer un périmètre de sécurité de 1500 mètres autour de la zone d'incendie.
 
-Créez une table `perimetre_securite` dont la colonne `geom` contient un polygone de la zone d'incendie étendu de 1500 mètres.
+Créez une table `perimetre_securite` qui contient un polygone de la zone d'incendie étendue de 1500 mètres.
 
 ## Question 10
+
+Des forces de l'ordre vont être déployées pour couper les routes au niveau du périmètre de sécurité.
+
+Créez une table `coupures_routes` qui liste les points où doivent être positionnées les forces de l'ordre.
+La requête de création de la table doit débuter par une CTE qui donne l'anneau extérieur du périmètre de sécurité présent dans la table `perimetre_securite`.
 
 ## Question 11
 

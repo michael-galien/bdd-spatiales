@@ -14,9 +14,7 @@ Il vous demande de lui fournir plusieurs éléments à l'appui des données géo
 Pour répondre aux questions du COS, vous allez devoir créer plusieurs tables PostgreSQL contenant une colonne géographique PostGIS.
 Dans chacune des tables, la colonne géographique devra être nommée `geom`.
 
-Pour pouvoir rejouer facilement l'intégralité du script SQL que vous allez rédiger durant le TD, chaque création de table devra être précédée d'un ordre SQL de suppression de la forme :
-
-`drop table if exists <nom_table>;`
+Pour pouvoir rejouer facilement l'intégralité du script SQL que vous allez rédiger durant le TD, chaque création de table devra être précédée d'un ordre SQL de suppression de la forme `drop table if exists <nom_table>;`.
 
 Sauf précision, le système de coordonnées utilisé sera le Lambert-93 ([SRID 2154](https://epsg.io/2154)).
 Dans cette projection, les mesures sont exprimées en m et m².

@@ -110,8 +110,8 @@ Créez une table `perimetre_securite` qui contient un polygone de la zone d'ince
 
 Des forces de l'ordre vont être déployées pour couper les routes au niveau du périmètre de sécurité.
 
-Créez une table `coupures_routes` qui liste les points où doivent être positionnées les forces de l'ordre.
-La requête de création de la table doit débuter par une CTE qui donne l'anneau extérieur du périmètre de sécurité présent dans la table `perimetre_securite`.
+A l'aide de la table `route_numerotee_ou_nommee`, créez une table `coupures_routes` qui liste les points où doivent être positionnées les forces de l'ordre.
+La requête doit débuter par une CTE qui donne l'anneau extérieur du périmètre de sécurité présent dans la table `perimetre_securite`.
 
 ### Question 11
 

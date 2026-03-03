@@ -73,6 +73,10 @@ Créez une table `communes_limitrophes_incendie` qui liste les communes limitrop
 
 ## Question 9
 
+Pour sécuriser le secteur, le COS vous demande de déterminer un périmètre de sécurité de 1500 mètres autour de la zone d'incendie.
+
+Créez une table `perimetre_securite` dont la colonne `geom` contient un polygone étendu de 1500 mètres autour de la zone d'incendie.
+
 ## Question 10
 
 ## Question 11

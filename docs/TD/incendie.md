@@ -157,6 +157,8 @@ Pour cela, vous pouvez ordonner de façon croissante les troçons de voie ferré
 
 ### Question 15
 
+Créez une table `point_pp_voie_ferree` qui donne le point le plus proche de la zone d'incendie sur le tronçon présent dans la table `pp_voie_ferree`.
+
 ### Question 16
 
 ### Question 17

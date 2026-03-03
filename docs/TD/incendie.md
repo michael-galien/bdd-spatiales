@@ -28,6 +28,8 @@ Aussi, si vous bloquez sur une question, vous pouvez trouver le résultat dans l
 Vous l'aurez compris, ce qui sera jugé ce ne sont pas les résultats en tant que tels mais bien les requêtes qui ont permis de les obtenir.
 Pensez donc à sauvegarder vos requêtes dans un fichier .sql et, à l'issue des 6h de TD, merci de me transférer ce fichier par e-mail.
 
+N'hésitez pas à vous référer [au cours](/Cours/Cours.pdf) ainsi qu'à la [documentation de PostGIS](https://postgis.net/docs/reference.html).
+
 ## Etapes préalables
 
 ### Initialisation de la BDD
@@ -50,7 +52,7 @@ Le front de feu est quant à lui positionné sur une ligne définie par les 3 po
 * 43°48'15.404"N 3°8'51.652"E
 * 43°47'53.682"N 3°9'1.814"E
 
-Les questions 1 à 5 vont permettre de créer le polygone du contour du feu.
+Les questions 1 à 5 vont permettre de créer le polygone de contour du feu.
 
 Créez une table contenant les points fournis par la cellule drone, pour cela :
 * Créez une table `points_incendie_4326` avec une colonne `id` de type `serial` (auto-incrément).
@@ -73,7 +75,7 @@ Créez une table `ligne_incendie` contenant la ligne construite à l'appui des p
 
 Pour pouvoir créer le contour de feu, il faut disposer d'une ligne fermée c'est-à-dire d'une ligne dont le premier point est égal au dernier point.
 
-Créez une table `contour_incendie` contenant une colonne `geom` remplie avec la ligne de la table `ligne_incendie` à laquelle vous aurez ajouté un point égal au point de départ de la ligne.
+Créez une table `contour_incendie` alimentée avec la ligne de la table `ligne_incendie` à laquelle vous aurez ajouté un point égal à son point de départ.
 
 ### Question 5
 

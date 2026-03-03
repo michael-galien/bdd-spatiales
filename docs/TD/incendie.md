@@ -125,10 +125,10 @@ Il est recommandé d'utiliser une CTE.
 
 ### Question 12
 
-En repartant de la table `perimetres_communaux_securite` et en utilisant une fonction de fenêtrage, créez une table `parts_perimetres_communaux_securite` qui donne :
+En repartant de la table `perimetres_communaux_securite` et en utilisant les fonctions de fenêtrage, créez une table `parts_perimetres_communaux_securite` qui donne :
 
 * le pourcentage que représente le périmètre de sécurité de la commune sur le périmètre total de sécurité (100 * nb hectares périmètre communal / nb hectares périmètre total),
-* le pourcentage que représente le périmètre de sécurité de la commune sur le périmètre de sécurité pour le département (100 * nb hectares périmètre communal / nb hectares périmètre départemental).
+* le pourcentage que représente le périmètre de sécurité de la commune sur le périmètre de sécurité du département (100 * nb hectares périmètre communal / nb hectares périmètre départemental).
 
 ### Question 13
 

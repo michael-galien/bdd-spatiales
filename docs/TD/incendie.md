@@ -161,6 +161,10 @@ Créez une table `point_pp_voie_ferree` qui donne le point le plus proche de la 
 
 ### Question 16
 
+Les bâtiments doivent être protégés en priorité.
+
+Créez une table `batiments_perimetre_securite` contenant les bâtiments présents dans le périmètre de sécurité.
+
 ### Question 17
 
 ### Question 18

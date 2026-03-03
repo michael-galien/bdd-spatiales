@@ -24,6 +24,7 @@ A noter que la réponse à certaines questions se base sur le résultat des pré
 Aussi, si vous bloquer sur une question, vous pouvez trouvez le résultat dans le schéma `donnees_resultats`.
 
 Vous l'aurez compris, ce qui est jugé ce ne sont pas les résultats en tant que tels mais bien les requêtes qui ont permis de les obtenir.
+Pensez donc à sauvegarder vos requêtes dans un fichier .sql et, à l'issue des 6h de TD, merci de me transférer ce fichier par e-mail.
 
 # Etapes préalables
 
@@ -57,7 +58,7 @@ Créez une table contenant les points fournis par la cellule drone, pour cela :
     
 ## Question 2
 
-Créez une table `points_incendie_2154` ayant la même structure et le même contenu que la table `points_incendie_4326` mais avec la géométrie reprojetée en Lambert-93 ([EPSG:2154](https://epsg.io/2154)).
+Créez une table `points_incendie_2154` ayant la même structure et le même contenu que la table `points_incendie_4326` mais avec la géométrie reprojetée en Lambert-93.
 
 ## Question 3
 

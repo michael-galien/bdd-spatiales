@@ -168,6 +168,11 @@ La structure de cette table sera identique à celle de la table `batiment`.
 
 ### Question 17
 
+Le COS souhaite protéger en priorité les habitations. Pour cela, il vous demande de lui donner les blocs de bâtiments résidentiels. 
+
+A l'appui de la table `batiments_perimetre_securite`, créez une table `clusters_residentiels_perimetre_securite` contenant les blocs de bâtiments à 500 mètres les uns des autres dont l'`usage_1` est résidentiel.
+A savoir, les fonctions de clustering retournent des tableaux qu'il est possible de convertir en lignes grâce à la fonction [`unnest`](https://www.postgresql.org/docs/current/functions-array.html).
+
 ### Question 18
 
 ### Question 19

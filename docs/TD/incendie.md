@@ -93,12 +93,14 @@ La zone très boisée rend difficile l'identification des limites communales.
 Le COS vous demande de lui confirmer que seule la commune de Joncels est pour l'heure impactée par l'incendie.
 
 Créez une table `commune_incendie` confirmant la commune d'emprise de l'incendie.
+Cette table doit avoir les mêmes champs que la table `commune`.
 
 ### Question 8
 
 Le COS souhaite informer les maires des communes limitrophes des opérations en cours et vous demande la liste des communes concernées.
 
 Créez une table `communes_limitrophes_incendie` qui liste les communes limitrophes à celle de la table `commune_incendie`.
+Cette table doit avoir les mêmes champs que la table `commune`.
 
 ### Question 9
 
@@ -110,7 +112,7 @@ Créez une table `perimetre_securite` qui contient un polygone de la zone d'ince
 
 Des forces de l'ordre vont être déployées pour couper les routes au niveau du périmètre de sécurité.
 
-A l'aide de la table `route_numerotee_ou_nommee`, créez une table `coupures_routes` qui liste les points où doivent être positionnées les forces de l'ordre.
+A l'aide de la table `route_numerotee_ou_nommee`, créez une table `coupures_routes` qui liste les points, avec le numéro de route correspondant, où doivent être positionnées les forces de l'ordre.
 
 La requête doit débuter par une CTE qui donne l'anneau extérieur du périmètre de sécurité présent dans la table `perimetre_securite`.
 

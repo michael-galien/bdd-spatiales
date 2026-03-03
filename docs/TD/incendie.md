@@ -148,9 +148,9 @@ Créez une table `mats_eoliens_proximite` avec les renseignements attendus par l
 Le point d'éclosion de l'incendie se trouve à proximité d'un chemin de fer.
 Le passage d'un train pourrait être à l'origine du départ de feu.
 
-Pour mener des investigations, le COS vous demande d'identifier le tronçon de voie férrée le plus proche de l'incendie.
+Pour mener des investigations, le COS vous demande d'identifier le tronçon de voie ferrée le plus proche de l'incendie.
 
-Créez une table `pp_voie_ferree` contenant le tronçon de voie férrée le plus proche de la zone d'incendie.
+Créez une table `pp_voie_ferree` contenant le tronçon de voie ferrée le plus proche de la zone d'incendie.
 Pour cela, vous pouvez ordonner de façon croissante les troçons de voie ferrée suivant leur distance à la zone d'incendie et [ne garder que le premier résultat](https://www.postgresql.org/docs/current/queries-limit.html).
 
 ### Question 15

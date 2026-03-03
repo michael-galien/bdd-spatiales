@@ -1,6 +1,7 @@
 # Scénario
 
 Un incendie est en cours au Nord du département de l'Hérault.
+
 Des vents importants d'Est en Ouest font que celui-ci progresse rapidement et qu'un important panache de fumée se dégage en direction de zones habitées.
 
 Le Commandant des Opérations de Secours (COS) a besoin d'informations sur la zone pour déployer de façon optimale les moyens sur place.

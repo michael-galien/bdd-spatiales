@@ -132,6 +132,17 @@ En repartant de la table `perimetres_communaux_securite` et en utilisant les fon
 
 ### Question 13
 
+Plusieurs mats éoliens se trouvent à proximité de la zone d'incendie.
+Ceux-ci représentent un réel danger pour les pilotes de Canadair lors des largages, d'autant que les fumées les rendent peu visibles.
+
+Les pilotes vous demandent de leur fournir la liste des mats éoliens en service à 5km à la ronde du feu.
+Pour chaque mât, ils souhaitent avoir :
+* la longitude, c'est à dire la coordonnée X en WGS84,
+* la latitude, c'est à dire la coordonnée Y en WGS84,
+* la hauteur.
+
+Créez une table `mats_eoliens_proximite` avec les renseignements attendus par les pilotes ainsi qu'une colonne `geom` contenant la localisation ponctuelle des mâts en WGS84.
+
 ### Question 14
 
 ### Question 15

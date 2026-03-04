@@ -228,4 +228,8 @@ Créez une table `zone_incendie_fixe(geom)` contenant l'union de la zone d'incen
 
 ### Question 24
 
+Le COS doit informer la presse de la distance parcourue par l'incendie.
+
+Créez une table `distance_parcourue_incendie(distance_parcourue, geom)` contenant la distance parcourue par les flammes en mètres. Pour cela, déterminez la ligne la plus longue entre la géométrie `zone_incendie_fixe` et elle-même puis calculez sa longueur.
+
 ### Question 25

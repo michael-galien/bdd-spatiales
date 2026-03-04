@@ -106,13 +106,13 @@ Cette table doit avoir les mêmes colonnes que la table `commune`.
 
 Le COS souhaite mettre en place un périmètre de sécurité de 1500 mètres autour de la zone d'incendie.
 
-Créez une table `perimetre_securite` qui contient un polygone de la zone d'incendie étendue de 1500 mètres.
+Créez une table `perimetre_securite(geom)` qui contient un polygone de la zone d'incendie étendue de 1500 mètres.
 
 ### Question 10
 
 Des forces de l'ordre vont être déployées pour couper les routes au niveau du périmètre de sécurité.
 
-A l'aide de la table `route_numerotee_ou_nommee`, créez une table `coupures_routes` qui liste les points, avec le numéro de route correspondant, où doivent être positionnées les forces de l'ordre.
+A l'aide de la table `route_numerotee_ou_nommee`, créez une table `coupures_routes(numero, geom)` qui liste les points, avec le numéro de route correspondant, où doivent être positionnées les forces de l'ordre.
 
 La requête doit débuter par une CTE qui donne l'anneau extérieur du périmètre de sécurité présent dans la table `perimetre_securite`.
 

@@ -55,52 +55,52 @@ Le front de feu est quant à lui positionné sur une ligne définie par les 3 po
 Les questions 1 à 5 vont permettre de créer le polygone de contour du feu.
 
 Créez une table contenant les points fournis par la cellule drone, pour cela :
-* Créez une table `points_incendie_4326` avec une colonne `id` de type `serial` (auto-incrément).
+* Créez une table `points_incendie_4326(id)` dont une colonne `id` de type `serial` (auto-incrément).
 * Ajoutez à la table une colonne `geom` de type point à 2 dimensions et utilisant le système de coordonnées WGS84.
 * Ajoutez à la table les 4 points suivants en respectant l'ordre d'insertion :
-    * latitude (X) : 3.173279, longitude (Y) : 43.802700
-    * latitude (X) : 3.151442, longitude (Y) : 43.808838
-    * latitude (X) : 3.147681, longitude (Y) : 43.804279
-    * latitude (X) : 3.150504, longitude (Y) : 43.798245
+    * longitude (X) : 3.173279, latitude (Y) : 43.802700
+    * longitude (X) : 3.151442, latitude (Y) : 43.808838
+    * longitude (X) : 3.147681, latitude (Y) : 43.804279
+    * longitude (X) : 3.150504, latitude (Y) : 43.798245
     
 ### Question 2
 
-Créez une table `points_incendie_2154` ayant la même structure et le même contenu que la table `points_incendie_4326` mais avec la géométrie reprojetée en Lambert-93.
+Créez une table `points_incendie_2154(id, geom)` ayant la même structure et le même contenu que la table `points_incendie_4326` mais avec la géométrie reprojetée en Lambert-93.
 
 ### Question 3
 
-Créez une table `ligne_incendie` contenant la ligne construite à l'appui des points de la table `points_incendie_2154` ordonnés par l'`id`.
+Créez une table `ligne_incendie(geom)` contenant la ligne construite à l'appui des points de la table `points_incendie_2154` ordonnés par l'`id`.
 
 ### Question 4
 
 Pour pouvoir créer le contour de feu, il faut disposer d'une ligne fermée c'est-à-dire d'une ligne dont le premier point est égal au dernier point.
 
-Créez une table `contour_incendie` alimentée avec la ligne de la table `ligne_incendie` à laquelle vous aurez ajouté un point égal à son point de départ.
+Créez une table `contour_incendie(geom)` alimentée avec la ligne de la table `ligne_incendie` à laquelle vous aurez ajouté un point égal à son point de départ.
 
 ### Question 5
 
-Créez une table `zone_incendie` contenant le polygone construit à l'appui de la ligne de la table `contour_incendie`.
+Créez une table `zone_incendie(geom)` contenant le polygone construit à l'appui de la ligne de la table `contour_incendie`.
 
 ### Question 6
 
 Le COS souhaite connaître la surface déjà parcourue par l'incendie.
 
-Créez une table `nb_ha_incendie` contenant toutes les colonnes de la table `zone_incendie` plus la surface de la zone exprimée en hectares.
+Créez une table `nb_ha_incendie(geom, nb_ha)` contenant la géométrie de la table `zone_incendie` plus la surface de la zone exprimée en hectares.
 
 ### Question 7
 
 La zone très boisée rend difficile l'identification des limites communales.
 Le COS vous demande de lui confirmer que seule la commune de Joncels est pour l'heure impactée par l'incendie.
 
-Créez une table `commune_incendie` confirmant la commune d'emprise de l'incendie.
-Cette table doit avoir les mêmes champs que la table `commune`.
+Créez une table `commune_incendie(fid, cleabs, code_insee, ...)` confirmant la commune d'emprise de l'incendie.
+Cette table doit avoir les mêmes colonnes que la table `commune`.
 
 ### Question 8
 
 Le COS souhaite informer les maires des communes limitrophes des opérations en cours et vous demande la liste des communes concernées.
 
-Créez une table `communes_limitrophes_incendie` qui liste les communes limitrophes à celle de la table `commune_incendie`.
-Cette table doit avoir les mêmes champs que la table `commune`.
+Créez une table `communes_limitrophes_incendie(fid, cleabs, code_insee, ...)` qui liste les communes limitrophes à celle de la table `commune_incendie`.
+Cette table doit avoir les mêmes colonnes que la table `commune`.
 
 ### Question 9
 

@@ -175,6 +175,11 @@ A savoir, les fonctions de clustering retournent des tableaux qu'il est possible
 
 ### Question 18
 
+Créez une table `enveloppes_clusters_perimetre_securite` à partir de la table `clusters_residentiels_perimetre_securite` contenant 2 colonnes :
+
+* une colonne `geom` qui donne le rectangle englobant du cluster,
+* une colonne `nb_batiments` qui indique le nombre de bâtiments présent dans le cluster.
+
 ### Question 19
 
 ### Question 20

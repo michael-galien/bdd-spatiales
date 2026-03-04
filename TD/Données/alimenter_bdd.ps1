@@ -105,3 +105,17 @@ $env:PGPASSWORD = $password
     -lco OVERWRITE=YES `
     -lco GEOMETRY_NAME=geom `
     -clipsrc 652958.4000000000232831 6217957.5999999996274710 811375.4000000000232831 6332632.9000000003725290
+
+& "${psql}" `
+    -h $pghost `
+    -U $user `
+    -d $dbname `
+    -c "alter table donnees_sources.batiment drop column if exists fid" `
+    -c "alter table donnees_sources.batiment_notable drop column if exists ogc_fid" `
+    -c "alter table donnees_sources.commune drop column if exists fid" `
+    -c "alter table donnees_sources.route_numerotee_ou_nommee drop column if exists fid" `
+    -c "alter table donnees_sources.surface_hydrographique drop column if exists fid" `
+    -c "alter table donnees_sources.troncon_de_route drop column if exists ogc_fid" `
+    -c "alter table donnees_sources.troncon_de_voie_ferree drop column if exists fid" `
+    -c "alter table donnees_sources.mat_eolien drop column if exists fid" `
+    -c "alter table donnees_sources.carroyage_insee drop column if exists fid"

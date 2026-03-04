@@ -239,4 +239,4 @@ Pour parvenir à maitriser le feu, le COS souhaite délimiter des zones de trava
 Créez une table `grille_incendie_fixe(centre, geom)` qui donne les cellules d'une grille hexagonale de 100 mètres de côté sur l'emprise du feu fixé. Cette table sera composée de deux colonnes :
 
 * `geom` : les cellules de la grille,
-* `centre`: les coordonnées WGS84 du centre des cellules exprimées en degrés, minutes, secondes.
+* `centre` : les coordonnées WGS84 du centre des cellules exprimées en degrés, minutes, secondes.

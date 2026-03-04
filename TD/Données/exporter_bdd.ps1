@@ -47,6 +47,8 @@ $env:PGPASSWORD = $password
     --no-owner `
     --schema donnees_sources `
     --schema donnees_resultats `
+    --clean `
+    --if-exists `
     -f "$PSScriptRoot\..\..\docs\TD\initialisation_bdd.sql"
 
 Compress-Archive `    -LiteralPath "$PSScriptRoot\..\..\docs\TD\initialisation_bdd.sql" `

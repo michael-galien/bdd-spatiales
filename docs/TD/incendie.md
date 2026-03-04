@@ -38,6 +38,7 @@ N'hésitez pas à vous référer [au cours](../Cours/Cours.pdf) ainsi qu'à la [
 Les données sources et les données de correction sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bdd.zip).
 
 Téléchargez et décompressez l'archive. Ensuite, importez les données dans la base de travail grâce à une commande `psql` de la forme :
+
 `psql -h <serveur_pg> -U <nom_utilisateur> -d <nom_bdd> -f <chemin_fichier_sql>`
 
 ### Paramètrage de QGIS

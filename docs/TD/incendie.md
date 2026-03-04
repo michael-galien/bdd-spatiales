@@ -55,7 +55,7 @@ Le front de feu est quant à lui positionné sur une ligne définie par les 3 po
 Les questions 1 à 5 vont permettre de créer le polygone de contour du feu.
 
 Créez une table contenant les points fournis par la cellule drone, pour cela :
-* Créez une table `points_incendie_4326(id)` dont la colonne `id` de type `serial` (auto-incrément).
+* Créez une table `points_incendie_4326(id)` dont la colonne `id` est de type `serial` (auto-incrément).
 * Ajoutez à la table une colonne `geom` de type point à 2 dimensions et utilisant le système de coordonnées WGS84.
 * Ajoutez à la table les 4 points suivants en respectant l'ordre d'insertion :
     * longitude (X) : 3.173279, latitude (Y) : 43.802700

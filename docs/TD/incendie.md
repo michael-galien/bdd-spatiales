@@ -222,7 +222,7 @@ Bien que la table ne dispose pas de géométrie, il reste possible de l'ajouter 
 
 ### Question 23
 
-L'incendie est désormais fixé. Par rapport on contour initial, il a progressé d'un kilomètre au delà du front.
+L'incendie est désormais fixé. Par rapport au contour initial, il a progressé d'un kilomètre au delà de la ligne de front.
 
 Créez une table `zone_incendie_fixe(geom)` contenant l'union de la zone d'incendie et d'une zone tampon de 1 km à droite du front de feu.
 

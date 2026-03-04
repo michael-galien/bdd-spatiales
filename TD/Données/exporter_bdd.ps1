@@ -47,4 +47,7 @@ $env:PGPASSWORD = $password
     --no-owner `
     --schema donnees_sources `
     --schema donnees_resultats `
-    -f "c:\Users\micha\Documents\GitHub\bdd-spatiales\docs\TD\initialisation_bdd.sql"
+    -f "$PSScriptRoot\..\..\docs\TD\initialisation_bdd.sql"
+
+Compress-Archive `    -LiteralPath "$PSScriptRoot\..\..\docs\TD\initialisation_bdd.sql" `
+    -DestinationPath "$PSScriptRoot\..\..\docs\TD\initialisation_bdd.zip" `    -Force

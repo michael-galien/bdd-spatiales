@@ -43,7 +43,21 @@ Téléchargez et décompressez l'archive. Ensuite, importez les données dans la
 
 ### Paramètrage de QGIS
 
-#### Tile Google Maps
+QGIS vous permettra de visualiser le résultat de vos requêtes. Pour cela, un paramètrage est nécessaire.
+
+#### Affichage des panneaux "Couches" et "Explorateur"
+
+Lancez QGIS et affichez les panneaux "Couches" et "Explorateur" grâce au menu Vue > Panneaux.
+
+![Vue > Panneaux](/images/panneaux_qgis.png "Vue > Panneaux")
+
+#### Ajout des tuiles Google Maps Hybrid
+
+Dans le panneau Explorateur, faites un clic-droit sur le noeud "Tuiles XYZ" et choisissez "Nouvelle connexion...".
+
+Saissisez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivante : http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}.
+
+![Connexion tuiles Google Maps Hybrid](/images/tuiles_google_maps.png "Connexion tuiles Google Maps Hybrid")
 
 #### Connexion PostgreSQL
 

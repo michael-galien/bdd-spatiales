@@ -14,8 +14,7 @@ $env:PGPASSWORD = $password
     -d $dbname `
     -c "drop schema if exists donnees_resultats cascade" `
     -c "create schema donnees_resultats" `
-    -c "create table donnees_resultats.points_incendie_4326 (like public.points_incendie_4326 including all)" `
-    -c "insert into donnees_resultats.points_incendie_4326 select * from public.points_incendie_4326" `
+    -c "create table donnees_resultats.points_incendie_4326 as select * from public.points_incendie_4326" `
     -c "create table donnees_resultats.points_incendie_2154 as select * from public.points_incendie_2154" `
     -c "create table donnees_resultats.ligne_incendie as select * from public.ligne_incendie" `
     -c "create table donnees_resultats.contour_incendie as select * from public.contour_incendie" `

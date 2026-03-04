@@ -198,7 +198,15 @@ Créez une table `distances_enveloppes_perimetre_securite(geom, nb_batiments, di
 
 ### Question 20
 
+Un important panache de fumée se dégage du front de feu en direction de l'Ouest.
+
+Créez une table `front_feu(geom)` contenant la ligne de front construite à partir des points 2, 3 et 4 de la ligne de la table `contour_incendie`.
+
 ### Question 21
+
+Les fumées sont visibles jusqu'à 4 km du front de l'incendie.
+
+Créez une table `fumees(geom)` en calculant un buffer de 4 km à droite du front de feu préalablement disponible dans la table `front_feu`.
 
 ### Question 22
 

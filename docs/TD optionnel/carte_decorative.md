@@ -88,7 +88,7 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 ### Etape 9
 
 * Ouvrez les propriétés de la couche `troncons_poi` et affichez les options de symbologie.
-* Remplacez "Symbole unique" par "Catégorisé" et dans "Valeur" sélectionnez "Importance".
+* Remplacez "Symbole unique" par "Catégorisé" et dans "Valeur" sélectionnez "importance".
 
 ![Symbologie Catégorisé](./images/symbologie_categorise.png "Symbologie Catégorisé")
 
@@ -97,7 +97,7 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 ![Catégories de symboles](./images/categories_symboles.png "Catégories de symboles")
 
 * Double-cliquez sur le symbole du premier item pour en afficher les propriétés.
-* Augmentez la taille à 0.8 millimètres et changer la couleur pour un gris foncé (code #707070), puis validez pour revenir aux options de symbologie.
+* Augmentez la taille à 0.8 millimètres et changez la couleur pour un gris foncé (code #707070), puis validez pour revenir aux options de symbologie.
 
 ![Symbole de la catégorie 1](./images/symbole_categorie_1.png "Symbole de la catégorie 1")
 
@@ -111,5 +111,14 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 * Double-cliquez sur le symbole du dernier item (celui sans valeur) pour en afficher les propriétés.
 * Diminuez la taille du symbole à 0.2 millimètres.
+
+* Validez en cliquant sur "OK".
+
+### Etape 10
+
+* Ouvrez les propriétés de la couche `batiments_notables_poi` et affichez les options de symbologie.
+* Modifiez les propriétés du "Remplissage simple" pour que la couleur de remplissage soit noire et la couleur du trait blanche.
+
+![Symbologie des bâtiments notables](./images/symbologie_batiments_notables.png "Symbologie des bâtiments notables")
 
 * Validez en cliquant sur "OK".

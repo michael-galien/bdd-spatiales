@@ -47,13 +47,13 @@ QGIS vous permettra de visualiser le résultat de vos requêtes. Pour cela, un p
 
 #### Affichage des panneaux "Couches" et "Explorateur"
 
-Lancez QGIS et affichez les panneaux "Couches" et "Explorateur" grâce au menu Vue > Panneaux.
+Lancez QGIS et affichez les panneaux "Couches" et "Explorateur" grâce au menu "Vue" > "Panneaux".
 
 ![Vue > Panneaux](./images/panneaux_qgis.png "Vue > Panneaux")
 
 #### Ajout des tuiles Google Maps Hybrid
 
-Dans le panneau Explorateur, faites un clic-droit sur le noeud "Tuiles XYZ" et choisissez "Nouvelle connexion...".
+Dans le panneau "Explorateur", faites un clic-droit sur le noeud "Tuiles XYZ" et choisissez "Nouvelle connexion...".
 
 Saissisez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivante :
 
@@ -63,11 +63,19 @@ http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}.
 
 #### Connexion PostgreSQL
 
-Dans le panneau Explorateur, faites un clic-droit sur le noeud "PostgreSQL" et choisissez "Nouvelle connexion...".
+Dans le panneau "Explorateur", faites un clic-droit sur le noeud "PostgreSQL" et choisissez "Nouvelle connexion...".
 
 Saisissez les paramètres de connexion à la base de données PostgreSQL / PostGIS. Prennez soin de cocher la case "Lister les tables sans géométries".
 
-![Connexion PostgreSQL / PostGIS](./images/tuiles_google_maps.png "Connexion PostgreSQL / PostGIS")
+![Connexion PostgreSQL / PostGIS](./images/connexion_postgresql_postgis.png "Connexion PostgreSQL / PostGIS")
+
+#### Ajout et personnalisation des couches
+
+Vous pouvez ajouter une couche à la vue cartographique par simple glisser-déposer depuis le panneau "Explorateur".
+
+Grâce au panneau "Couches" vous pouvez afficher les propriétés d'un élément par double-clic. Le panneau de propriétés vous permet notamment de modifier la symbologie d'une couche.
+
+![Symbologie QGIS](./images/symbologie_qgis.png "Symbologie QGIS")
 
 ## Questions
 

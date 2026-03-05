@@ -1,4 +1,4 @@
-# TD optionnel (en cours de rédaction)
+# TD optionnel
 
 [Retourner à l'accueil](../index.md)
 

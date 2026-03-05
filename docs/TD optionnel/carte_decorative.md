@@ -6,7 +6,7 @@ L'objectif de ce TD optionnel est de créer une carte décorative centrée sur u
 
 ### Etape 1
 
-Sur Google Maps, repéré un lieu qui vous rappelle un bon souvenir. Faites alors un clic-droit sur la carte à l'endroit du lieu et cliquer sur les coordonnées afin de les copier.
+Sur Google Maps, repéré un lieu qui vous rappelle un bon souvenir. Faites alors un clic-droit sur la carte à l'endroit du lieu et cliquez sur les coordonnées afin de les copier.
 
 Attention à l'ordre des coordonnées, Google Maps les donnent en latitude (X), longitude (Y).
 
@@ -45,7 +45,7 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ### Etape 7
 
-* Télécharger l'image disponible [à cette adresse](./images/etoile.png){:target="_blank"}.
+* Téléchargez l'image disponible [à cette adresse](./images/etoile.png){:target="_blank"}.
 * Ouvrez les propriétés de la couche `poi` et affichez les options de symbologie.
 * Dans la fenêtre, sélectionnez le "Symbole simple".
 
@@ -59,7 +59,14 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Sélection de l'étoile](./images/selection_etoile.png "Sélection de l'étoile")
 
+* Modifiez la taille du symbole pour le passer à 8 millimètres.
 * Dans "Rendu de la couche", cochez "Effets".
 * Cliquez sur le bouton "* - Personnaliser les effets" et sélectionnez "Ombre portée".
 
 ![Effet d'ombre portée](./images/effet_ombre_portee.png "Effet d'ombre portée")
+
+### Etape 8
+
+* Ouvrez les propriétés de la couche `poi` et affichez les options d'étiquetage.
+* Choisissez "Etiquettes simples", la valeur devrait automatiquement être remplie avec "coordonnees".
+

@@ -41,9 +41,9 @@ Téléchargez et décompressez l'archive. Ensuite, importez les données dans la
 
 `psql -h <serveur_pg> -U <nom_utilisateur> -d <nom_bdd> -f <chemin_fichier_sql>`
 
-### Paramètrage de QGIS
+### Paramétrage de QGIS
 
-QGIS vous permettra de visualiser le résultat de vos requêtes. Pour cela, un paramètrage est nécessaire.
+QGIS vous permettra de visualiser le résultat de vos requêtes. Pour cela, un paramétrage est nécessaire.
 
 #### Affichage des panneaux "Couches" et "Explorateur"
 
@@ -65,7 +65,7 @@ http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}
 
 Dans le panneau "Explorateur", faites un clic-droit sur le noeud "PostgreSQL" et choisissez "Nouvelle connexion...".
 
-Saisissez les paramètres de connexion à la base de données PostgreSQL / PostGIS. Prennez soin de cocher la case "Lister les tables sans géométries".
+Saisissez les paramètres de connexion à la base de données PostgreSQL / PostGIS. Prenez soin de cocher la case "Lister les tables sans géométries".
 
 ![Connexion PostgreSQL / PostGIS](./images/connexion_postgresql_postgis.png "Connexion PostgreSQL / PostGIS")
 

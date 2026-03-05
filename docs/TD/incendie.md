@@ -35,13 +35,13 @@ N'hésitez pas à vous référer [au cours](../Cours/Cours.pdf){:target="_blank"
 
 ## Etapes préalables
 
-### Initialisation de la BDD
+### Initialisation de la BD
 
-Les données sources et les données résultats sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bdd.zip){:target="_blank"}.
+Les données sources et les données résultats sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bd.zip){:target="_blank"}.
 
 Téléchargez et décompressez l'archive. Ensuite, importez les données dans la base PostgreSQL / PostGIS grâce à une commande `psql` de la forme :
 
-`psql -h <serveur_pg> -U <nom_utilisateur> -d <nom_bdd> -f <chemin_fichier_sql>`
+`psql -h <serveur_pg> -U <nom_utilisateur> -d <nom_bd> -f <chemin_fichier_sql>`
 
 ### Paramétrage de QGIS
 

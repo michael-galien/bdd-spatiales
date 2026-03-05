@@ -154,6 +154,13 @@ Vous devriez voir dans la vue cartographique une représentation similaire à ce
 ![Nouvelle mise en page](./images/nouvelle_mise_en_page.png "Nouvelle mise en page")
 
 * La création de la nouvelle mise en page devrait ouvrir automatiquement le composeur d'impression.
-* Faites un clic-droit sur la page et sélectionnez "Propriétés de la page..."
+* Faites un clic-droit sur la page et sélectionnez "Propriétés de la page...".
 
 ![Propriétés de la page](./images/proprietes_page.png "Propriétés de la page")
+
+* Depuis le menu "Vue", cliquez sur "Zoomer sur l'emprise totale".
+* Cliquez sur "Ajouter un objet" > "Ajouter carte" et faites en sorte que l'objet prenne l'intégralité de la page.
+* Faites un clic-droit sur l'objet et sélectionnez "Propriétés de l'objet...".
+* Modifier l'échelle pour être au 1/20000.
+
+![Modification de l'échelle](./images/modification_echelle.png "Modification de l'échelle")

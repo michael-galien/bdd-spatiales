@@ -42,3 +42,15 @@ Dans une nouveau projet QGIS, ajoutez les couches de haut en bas dans l'ordre su
 Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Panneau Couches](./images/panneau_couches.png "Panneau Couches")
+
+### Etape 7
+
+* Télécharger l'image disponible [à cette adresse](./images/etoile.png){:target="_blank"}.
+* Ouvrez les propriétés de la couche `poi` et affichez les options de symbologie.
+* Dans la fenêtre, sélectionnez le "Symbole simple".
+
+![Symbole simple](./images/symbole_simple.png "Symbole simple")
+
+* Dans "Type de symbole", sélectionnez "Symbole image raster"
+
+![Symbole image raster](./images/symbole_image_raster.png "Symbole image raster")

@@ -177,7 +177,7 @@ En repartant de la table `perimetres_communaux_securite` et en utilisant les fon
 Plusieurs mats éoliens se trouvent à proximité de la zone d'incendie.
 Ceux-ci représentent un réel danger pour les pilotes de Canadair lors des largages, d'autant que les fumées les rendent peu visibles.
 
-Les pilotes vous demandent de leur fournir la liste des mats éoliens en service à 5km à la ronde du feu.
+Les pilotes vous demandent de leur fournir la liste des mats éoliens en service à 5 km à la ronde du feu.
 Pour chaque mât, ils souhaitent avoir :
 * la longitude, c'est à dire la coordonnée X en WGS84,
 * la latitude, c'est à dire la coordonnée Y en WGS84,
@@ -214,7 +214,7 @@ La structure de cette table sera identique à celle de la table `batiment`.
 
 Le COS souhaite protéger en priorité les habitations. Pour cela, il vous demande de lui donner les blocs de bâtiments résidentiels afin d'y affecter des moyens. 
 
-A l'appui de la table `batiments_perimetre_securite`, créez une table `clusters_residentiels_perimetre_securite(geom)` contenant les blocs de bâtiments à 500 mètres les uns des autres dont l'`usage_1` est résidentiel.
+A l'appui de la table `batiments_perimetre_securite`, créez une table `clusters_residentiels_perimetre_securite(geom)` contenant les blocs de bâtiments à 500 mètres les uns des autres dont l'`usage_1` est `Résidentiel`.
 
 A savoir, les fonctions de clustering retournent des tableaux qu'il est possible de convertir en lignes grâce à [la fonction `unnest`](https://www.postgresql.org/docs/current/functions-array.html){:target="_blank"}.
 Par ailleurs, les fonctions de clustering donnent des `GeometryCollection` que QGIS n'est pas en mesure d'afficher.

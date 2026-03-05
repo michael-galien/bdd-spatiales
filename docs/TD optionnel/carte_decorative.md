@@ -111,7 +111,6 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 * Double-cliquez sur le symbole du dernier item (celui sans valeur) pour en afficher les propriétés.
 * Diminuez la taille du symbole à 0.2 millimètres.
-
 * Validez en cliquant sur "OK".
 
 ### Etape 10

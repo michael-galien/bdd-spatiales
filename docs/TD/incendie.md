@@ -27,7 +27,7 @@ A noter que la réponse à certaines questions se base sur le résultat des pré
 Aussi, si vous bloquez sur une question, vous pouvez trouver le résultat dans le schéma `donnees_resultats`.
 
 Vous l'aurez compris, ce qui sera jugé ce ne sont pas les résultats en tant que tels mais bien les requêtes qui ont permis de les obtenir.
-Pensez donc à sauvegarder vos requêtes dans un fichier .sql et, à l'issue des 6h de TD, merci de me transférer ce fichier par e-mail.
+Pensez donc à sauvegarder vos requêtes dans un fichier .sql et, à l'issue des 6h de TD, merci de me transférer ce fichier par e-mail. Je vous transmettrai en retour la correction.
 
 N'hésitez pas à vous référer [au cours](../Cours/Cours.pdf){:target="_blank"} ainsi qu'à la [documentation de PostGIS](https://postgis.net/docs/reference.html){:target="_blank"}.
 

@@ -152,3 +152,8 @@ Vous devriez voir dans la vue cartographique une représentation similaire à ce
 * Dans le menu "Projet", ouvrez le "Gestionnaire de mises en pages..." et créez une nouvelle mise en page nommée "A3".
 
 ![Nouvelle mise en page](./images/nouvelle_mise_en_page.png "Nouvelle mise en page")
+
+* La création de la nouvelle mise en page devrait ouvrir automatiquement le composeur d'impression.
+* Faites un clic-droit sur la page et sélectionnez "Propriétés de la page..."
+
+![Propriétés de la page](./images/proprietes_page.png "Propriétés de la page")

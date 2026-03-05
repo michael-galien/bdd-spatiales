@@ -69,4 +69,18 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 * Ouvrez les propriétés de la couche `poi` et affichez les options d'étiquetage.
 * Choisissez "Etiquettes simples", la valeur devrait automatiquement être remplie avec "coordonnees".
+* Modifiez la police et la taille du texte.
+
+![Texte de l'étiquette](./images/etiquette_texte.png "Texte de l'étiquette")
+
+* Ajoutez un tampon blanc autour de l'étiquette.
+
+![Tampon de l'étiquette](./images/etiquette_tampon.png "Tampon de l'étiquette")
+
+* Positionnez l'étiquette de façon décalé par rapport au point de sorte à ce qu'elle s'affiche 5 millimètres en dessous.
+
+![Position de l'étiquette](./images/etiquette_position.png "Position de l'étiquette")
+
+### Etape 9
+
 

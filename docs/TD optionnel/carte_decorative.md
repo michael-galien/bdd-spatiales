@@ -45,6 +45,8 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Panneau Couches](./images/panneau_couches.png "Panneau Couches")
 
+:warning: Pensez à sauvegarder votre projet de temps en temps, QGIS est parfois capricieux.
+
 ### Etape 7
 
 * Téléchargez l'image disponible [à cette adresse](./images/etoile.png){:target="_blank"}.
@@ -144,3 +146,9 @@ Depuis le panneau "Couches", faites un clic-droit sur la couche `troncons_poi` e
 Vous devriez voir dans la vue cartographique une représentation similaire à celle-ci.
 
 ![Vue cartographique](./images/vue_cartographique.png "Vue cartographique")
+
+### Etape 13
+
+* Dans le menu "Projet", ouvrez le "Gestionnaire de mises en pages..." et créez une nouvelle mise en page nommée "A3".
+
+![Nouvelle mise en page](./images/nouvelle_mise_en_page.png "Nouvelle mise en page")

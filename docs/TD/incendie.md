@@ -52,7 +52,7 @@ QGIS vous permettra de visualiser le résultat de vos requêtes. Pour cela, un p
 
 #### Affichage des panneaux "Couches" et "Explorateur"
 
-Lancez QGIS et affichez les panneaux "Couches" et "Explorateur" grâce au menu "Vue" > "Panneaux".
+Lancez QGIS et affichez les panneaux ["Couches"](https://docs.qgis.org/latest/fr/docs/user_manual/introduction/general_tools.html#layers-panel) et ["Explorateur"](https://docs.qgis.org/latest/fr/docs/user_manual/introduction/browser.html) grâce au menu "Vue" > "Panneaux".
 
 ![Vue > Panneaux](./images/panneaux_qgis.png "Vue > Panneaux")
 
@@ -261,7 +261,7 @@ Ces fumées pourraient incommoder les personnes les plus vulnérables. Le COS vo
 
 A partir de la table `carroyage_insee`, créez une table `personnes_vulnerables(pop_0_5_ans, pop_65_ans_et_plus)` qui donne la somme arrondie à l'unité du nombre de personnes de 0 à 5 ans et de 65 ans et plus habitants dans un carreau totalement ou partiellement recouvert par les fumées.
 
-Bien que la table ne dispose pas de géométrie, il reste possible de l'ajouter à un projet QGIS et d'en afficher la table attributaire.
+Bien que la table ne dispose pas de géométrie, il reste possible de l'ajouter à un projet QGIS et d'en afficher la [table attributaire](https://docs.qgis.org/latest/fr/docs/user_manual/working_with_vector/attribute_table.html).
 
 ### Question 23
 
@@ -281,5 +281,5 @@ Pour parvenir à maitriser le feu, le COS souhaite délimiter des zones de trava
 
 Créez une table `grille_incendie_fixe(centre, geom)` qui donne les cellules d'une grille hexagonale de 100 mètres de côté sur l'emprise du feu fixé. Cette table sera composée de deux colonnes :
 
-* `geom` : les cellules de la grille,
+* `geom` : les cellules de la grille en Lambert-93,
 * `centre` : les coordonnées WGS84 du centre des cellules exprimées en degrés, minutes, secondes.

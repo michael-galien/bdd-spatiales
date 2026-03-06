@@ -48,7 +48,7 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Panneau Couches](./images/panneau_couches.png "Panneau Couches")
 
-:warning: Pensez à sauvegarder votre projet de temps en temps, QGIS est parfois capricieux.
+Attention, pensez à sauvegarder votre projet de temps en temps, QGIS est parfois capricieux.
 
 ### Etape 7
 

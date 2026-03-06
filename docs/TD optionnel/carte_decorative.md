@@ -1,5 +1,8 @@
 # TD optionnel
 
+Ce contenu est sous licence [Creative Commons International 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr).
+![Creative Commons International 4.0 BY-NC-SA](./images/cc-by-nc-sa.png "Creative Commons International 4.0 BY-NC-SA")
+
 [Retourner à l'accueil](../index.md)
 
 ## Objectif

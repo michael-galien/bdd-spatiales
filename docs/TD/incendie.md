@@ -245,7 +245,7 @@ Un important panache de fumée se dégage du front de feu en direction de l'Oues
 
 Créez une table `front_feu(geom)` contenant la ligne de front construite à partir des points 2, 3 et 4 de la ligne de la table `contour_incendie`.
 
-Pour cela, vous pouvez créer un tableau de géométries grâce à la syntaxe `array[geom_1, geom_2, ..., geom_N]`.
+Pour cela, vous pouvez créer [un tableau](https://www.postgresql.org/docs/current/arrays.html) de géométries grâce à la syntaxe `array[geom_1, geom_2, ..., geom_N]`.
 
 ### Question 21
 
